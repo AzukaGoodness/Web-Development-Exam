@@ -36,6 +36,7 @@ namespace SmartWallet.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                model.SubmissionDate = DateTime.Now;
                 await _customerRepository.Add(model);
 
                 return RedirectToAction("Index", "Customer");

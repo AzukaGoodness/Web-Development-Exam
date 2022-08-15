@@ -14,8 +14,7 @@ namespace smartwallet1.web.Data.MappingConfiguration
             modelBuilder.Entity<Customer>().Property(c => c.Gender).HasMaxLength(50);
             modelBuilder.Entity<Customer>().Property(c => c.Country).HasMaxLength(50);
             modelBuilder.Entity<Customer>().Property(c => c.State).HasMaxLength(50);
-            modelBuilder.Entity<Customer>().Property(c => c.city).IsRequired(true).HasMaxLength(11);
-            modelBuilder.Entity<Customer>().Property(c => c.SubmissionDate).IsRequired(true);
+            modelBuilder.Entity<Customer>().Property(c => c.city).IsRequired(true).HasMaxLength(11);           
             modelBuilder.Entity<Customer>().Property(c => c.BirthDate).IsRequired(true);
 
 
