@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(c=> 
-                 c.UseSqlServer("Server=JHARGO\\JHARGO; Database=CrudApplication3Db; Trusted_Connection=True;"));
+                 c.UseSqlServer("Server=DESKTOP-VC13C53; Database=smartwallet1Db; Trusted_Connection=True;"));
 
 builder.Services.AddScoped<IRepository<Customer, Guid>, CustomerRepository>();
 
